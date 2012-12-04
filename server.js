@@ -72,4 +72,4 @@ http.createServer(function (req, res) {
     res.end(JSON.stringify({ 'response': 'unknown' }) + '\n');
   }
 }).listen(1337, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:1337/');
+console.log('Server running at http://127.0.0.1:8080/');
