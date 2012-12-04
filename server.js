@@ -69,7 +69,7 @@ http.createServer(function (req, res) {
   } else if (req.url === '/store') {
     handleStore(req, res);
   } else {
-    res.end(JSON.stringify({ 'response': 'unknown' }) + '\n');
+    finalizeResponse(res, 'unknown');
   }
 }).listen(1337, '127.0.0.1');
 console.log('Server running at http://127.0.0.1:8080/');
